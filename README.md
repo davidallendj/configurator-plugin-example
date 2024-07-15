@@ -1,6 +1,12 @@
 # Configurator Plugin Example
 
-This repository is simply demonstrates how to create an external generator plugin for the configurator. The plugin can be modified and built using the following command:
+This repository is simply demonstrates how to create an external generator plugin for the configurator. If you're making a completely new plugin, make sure you initialize the Go project first:
+
+```bash
+go mod init github.com/mynewplugin
+```
+
+Then, the plugin can be modified and built using the following command:
 
 ```bash
 go build -buildmode=plugin -o testplugin.so testplugin.go
